@@ -9,16 +9,36 @@ A Flask-based RESTful API for managing drinks, complete with a frontend interfac
 5. [`requirements`](https://github.com/Sebastianutcn/DrinkManagerAPI/blob/main/requirements.txt) is a file listing the Python package dependencies required for the Flask application, ensuring the correct environment setup for the Drink Manager project.
 
 ## Installation
-- Terraform command to initialize the project
+- Refreshing package index
 ```
-terraform init
+sudo apt update
 ```
-* Terraform command to plan the changes and to check again the resources that were added, changed or deleted
+* Installing Python3
 ```
-terraform plan -out plan.out
+sudo apt install python3
 ```
-- Terraform command to apply the changes
+- Installing Flask
 ```
-terraform apply plan.out --auto-approve
+pip3 install flask
+```
+* Installing SQLAlchemy
+```
+pip3 install flask-sqlalchemy
+```
+- Creating the [`requirements`](https://github.com/Sebastianutcn/DrinkManagerAPI/blob/main/requirements.txt) file
+```
+pip3 freeze > requirements.txt
+```
+- Exporting the FLASK_APP variable
+```
+export FLASK_APP=application.py
+```
+* Installing CORS
+```
+pip install flask-cors
+```
+- Starting the Flask development server
+```
+flask run
 ```
 
