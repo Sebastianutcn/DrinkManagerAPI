@@ -1,0 +1,90 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Select dropdown styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Form container */
+#formContainer {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #031a32; /* Darker shade on hover */
+}
+
+/* Result section */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    background-color: #e7f3fe;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    button {
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+}

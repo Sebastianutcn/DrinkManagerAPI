@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Manager</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    <h1>Drink Manager</h1>
+    
+    <label for="operation">Select Operation:</label>
+    <select id="operation">
+        <option value="getDrinks">Get All Drinks</option>
+        <option value="addDrink">Add Drink</option>
+        <option value="updateDrink">Update Drink</option>
+        <option value="deleteDrink">Delete Drink</option>
+    </select>
+
+    <div id="formContainer">
+        <!-- This section will be dynamically updated based on operation -->
+    </div>
+
+    <button onclick="executeOperation()">Execute Operation</button>
+
+    <div class="result" id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
